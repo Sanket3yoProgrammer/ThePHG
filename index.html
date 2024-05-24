@@ -25,6 +25,10 @@
   
 
 <style>
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 .navbar-fixed-top {
   top: auto;
 }
@@ -104,6 +108,7 @@
 					<li class="nav-item">
 						<a class="nav-link link text-black display-4" href="https://mobiri.se">Activities</a>
 					</li>
+					<button onclick="myFunction()">Toggle dark mode</button>
 				</ul>
 				
 				<div class="navbar-buttons mbr-section-btn">
@@ -1005,7 +1010,12 @@
     </div>
 </section>
 
-
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
   <script src="https://r.mobirisesite.com/464416/assets/web/assets/jquery/jquery.min.js?rnd=1716546147537"></script>
   <script src="https://r.mobirisesite.com/464416/assets/bootstrap/js/bootstrap.bundle.min.js?rnd=1716546147537"></script>
   <script src="https://r.mobirisesite.com/464416/assets/smoothscroll/smooth-scroll.js?rnd=1716546147537"></script>

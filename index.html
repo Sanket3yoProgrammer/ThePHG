@@ -114,7 +114,9 @@ body {
 						<a class="nav-link link text-black display-4" href="https://mobiri.se">Activities</a>
 					</li>
 					
-					<button onclick="myFunction()">Toggle dark mode</button>
+					<button onclick="toggleDarkMode()">Toggle dark mode</button>
+
+
 			                
 				</ul>
 				
@@ -1018,9 +1020,9 @@ body {
 </section>
 
 <script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
+function toggleDarkMode() {
+  var body = document.body;
+  body.classList.toggle("dark-mode");
 }
 </script>
   <script src="https://r.mobirisesite.com/464416/assets/web/assets/jquery/jquery.min.js?rnd=1716546147537"></script>
